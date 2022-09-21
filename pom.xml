@@ -103,6 +103,7 @@
         </dependency>
 
         <!-- JDBC için eklendi --><!--mysql connection driver--> <!--her DB nin diriveri ayri-->
+<!--        JDBC connection diye aratacaz-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>

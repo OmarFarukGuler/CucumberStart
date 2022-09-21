@@ -3,10 +3,7 @@ package _JDBC.Gun01;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class JDBC_Parent {
 
@@ -27,7 +24,7 @@ public class JDBC_Parent {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-
+        //ResultSet rs=statement.executeQuery("select*from film");
 
     }
     @AfterTest
