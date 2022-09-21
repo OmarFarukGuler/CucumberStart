@@ -1,0 +1,62 @@
+
+    int sayi=12345678;
+        System.out.printf("%,d",sayi); // %,d araya virgül koyunca parasal ifadelerde aralarına nokta koyarak yazdırır //12.345.678
+        String str="Merhaba Dünya";
+        System.out.printf("%n %s",str);//%s ile string ifadeyi olduğu gibi yazdırdık //Merhaba Dünya
+        System.out.printf("%n %S",str);//%S büyük S ile string ifadeyi büyük harflerle yazdırdık //MERHABA DÜNYA
+
+
+
+
+//        String str="Merhaba";
+//        String str1="Dünya";
+//        String str2="Nasılsınız";
+//        System.out.printf("%20s %10s   %s %n",str,str1,str2);//%20s %10s %s ifadelerinin arasındaki boşluklar da ekranda boşluk olarak yansıyor
+//
+
+//        String str="Merhaba Dünya";
+//
+//        System.out.printf("%20s %n",str);// str 13 karakterli 13 ten fazla oolursa sağa doğru kaydırır ekranda
+//        System.out.printf("%10s %n",str);//10 karakterlik yer ayırsak da sola dayalı yazıyor çünkü uzunluk fazla
+//        System.out.printf("%s %n",str);//yani str nin uzunluğunu garantiye alıyor işlemi ona göre yapıyor
+
+
+
+
+       // burada integer sayıları printf ile yazdırdık
+//        int sayi=34;
+//        int sayi2=53434;
+//        int sayi3=542534445;
+//
+//        System.out.printf("%10d %n",sayi);
+//        System.out.printf("%10d %n",sayi2);
+//        System.out.printf("%10d %n",sayi3);
+
+
+
+
+        //        double sayi=3.674612378461;
+//        double sayi2=23242784.14612378461;
+//        double sayi3=24543.23612378461;
+
+//        System.out.printf("%5.2f %n %15.2f %n %45.2f %n",sayi,sayi2,sayi3); // %n fonksiyonunu aralarda da kullanabiliyoruz
+//
+//        System.out.printf("%5.2f %15.2f %45.2f %n",sayi,sayi2,sayi3);// burada da yan yana yazdırdık ve hangi formatın
+                                        // hangi sayıya ait olduğunu göstermek için karakter alanlarını farklı yaptık
+                                //bunlar float değerleri yazdırmak içindi.
+        //%5 gibi kısımlar ekranda yazdırılacak karakter alanını belirtiyor
+        //2f burada noktadan sonra kaç karakterin yazdırılacağını belirtiyor.
+        // 4f yazsaydık noktadan sonraki 4 karakteri yazardı ekrana
+        //%n ile alt satıra geçmesini sağlıyoruz
+
+
+
+
+//        System.out.printf("%10.2f",sayi);// printf ile 10 karakterlik bir alan içine
+//                                        // sayi değişkeninin virgülden sonraki 2 elemanını yazdırdık.
+
+
+        //burada alt alta yazdırdık ve noktadan sonraki rakamlar yuvarlandı.
+//        System.out.printf("%15.2f %n",sayi);
+//        System.out.printf("%15.2f %n",sayi2);
+//        System.out.printf("%15.2f %n",sayi3);
