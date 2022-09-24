@@ -94,6 +94,7 @@ public class _02_GetRowAllColumn extends JDBC_Parent {
         }
         // language_id name last_update
         System.out.println("");
+
 //        resultSet.first();
         while (resultSet.next()) {
             String language_id = resultSet.getString(1);

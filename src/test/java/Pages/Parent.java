@@ -13,6 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import javax.swing.*;
 import java.time.Duration;
+import java.util.List;
 
 public class Parent {
 
@@ -93,6 +94,11 @@ public class Parent {
     public void waitUntilVisible(WebElement element) {
         WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(30));
         wait.until(ExpectedConditions.visibilityOf(element));
+    }
+    public List<WebElement> waitUntilVisibleAllElements(List<WebElement> elementList) {
+        WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(30));
+        wait.until(ExpectedConditions.visibilityOfAllElements(elementList));
+        return elementList;
     }
 
     public void scrollToElement(WebElement element) {
