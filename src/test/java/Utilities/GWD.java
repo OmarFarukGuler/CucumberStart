@@ -44,10 +44,12 @@ public class GWD {
             switch (browser.get()) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
-                    ChromeOptions options=new ChromeOptions();
-                    options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400");
-
+                    if (!runningFromIntelliJ()) {
+                        ChromeOptions options = new ChromeOptions();
+                        options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400");
                     driver.set(new ChromeDriver(options));
+                    }
+                    else  driver.set(new ChromeDriver());
                     break;
 
                 case "firefox":
@@ -94,5 +96,9 @@ public class GWD {
         }
     }
 
-
+    public static boolean runningFromIntelliJ()
+    {
+        String classPath = System.getProperty("java.class.path");
+        return classPath.contains("idea_rt.jar");
+    }
 }
