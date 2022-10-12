@@ -11,7 +11,7 @@ import io.cucumber.testng.CucumberOptions;
 
        // plugin = {"html:target//cucumber-reports.html"}//jenkins icin ekledik
         plugin = {"pretty","html:target/site/cucumber-pretty","json:target/cucumber/cucumber.json"}
-
+//master report plugin
 )
 
 
