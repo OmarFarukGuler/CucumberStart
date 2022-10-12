@@ -1,21 +1,13 @@
 package _JDBC.Gun02;
 
-import Utilities.DBUtilities;
-import Utilities.ExcelUtility;
 import _JDBC.Gun01.JDBC_Parent;
-import com.beust.jcommander.Parameter;
-import io.cucumber.testng.CucumberOptions;
 import org.apache.poi.ss.usermodel.*;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class _03_Odevler extends JDBC_Parent {
 //    Soru 1: getTable için yaptığını örneğin aynısını,
