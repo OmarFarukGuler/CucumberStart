@@ -41,6 +41,6 @@ public class _01_LoginSteps {
 //        dc.waitUntilVisible(dc.dashboard);
 //        Assert.assertTrue(dc.dashboard.getText().contains("Dashboard"));
 
-        dc.findAndContainsText("dashboar","Dashboard");
+        dc.findAndContainsText("dashboa","Dashboard");
     }
 }
