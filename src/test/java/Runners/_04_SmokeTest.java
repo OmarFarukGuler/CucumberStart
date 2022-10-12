@@ -9,7 +9,9 @@ import io.cucumber.testng.CucumberOptions;
         features = {"src/test/java/FeatureFiles/"},     //buraya features larin yolu verilecek
         glue = {"StepDefinitions"}   ,                                  //stepsDefinitions larin klasoru yazilacak.
 
-        plugin = {"html:target//cucumber-reports.html"}//jenkins icin ekledik
+       // plugin = {"html:target//cucumber-reports.html"}//jenkins icin ekledik
+        plugin = {"pretty","html:target/site/cucumber-pretty","json:target/cucumber/cucumber.json"}
+
 )
 
 
